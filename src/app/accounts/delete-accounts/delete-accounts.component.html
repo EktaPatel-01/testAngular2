@@ -1,0 +1,13 @@
+<p>delete-accounts works!</p>
+<table border="5" [cellPadding]="5" [cellSpacing]="5">
+    <tr>
+        <td>
+            <input type="number" [(ngModel)]="acno">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="deleteAccount()">Delete this Account</button>
+        </td>
+    </tr>
+</table>

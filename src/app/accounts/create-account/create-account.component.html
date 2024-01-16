@@ -1,0 +1,15 @@
+<p>create-account works!</p>
+<table border="5" [cellPadding]="10" [cellSpacing]="10">
+    <tr>
+        <td>Account Number</td>
+        <td>Account HolderName</td>
+        <td>Account Balance</td>
+    </tr>
+    <tr>
+        <td><input type="number" [(ngModel)]="current_Account1.accountNumber"></td>
+        <td><input type="String" [(ngModel)]="current_Account1.accountHolderName"></td>
+        <td><input type="number" [(ngModel)]="current_Account1.accountBalance"></td>
+
+    </tr>
+    <button (click)="localCreateAccount()">Add This Account</button>
+</table>

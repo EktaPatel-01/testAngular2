@@ -1,0 +1,16 @@
+<!-- demo14 springboot -->
+<p>view-all-accounts works!</p>
+<table border="5" [cellPadding]="10" [cellSpacing]="10">
+    <tr>
+        <th>no</th>
+        <th>name</th>
+        <th>balance</th>
+    </tr>
+    <tr *ngFor="let x of current_AccountList1">
+        <td>{{x.accountNumber}}</td>
+        <td>{{x.accountHolderName}}</td>
+        <td>{{x.accountBalance}}</td>
+    </tr>
+ 
+</table>
+<button (click)="viewAll()">View All Accounts</button>
